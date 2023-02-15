@@ -1,0 +1,12 @@
+1. weighted sum from input node to next node.
+2. activation function inside of node.
+
+weights in matrix
+inputs in array/vector
+
+weighted sum = sum(input * weight)
+
+
+Linear Algebra:
+
+dot prod a * b = cols of a * rows of b
