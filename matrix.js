@@ -121,24 +121,24 @@ class Matrix{
 }
 
 
-function test1(){
+// function test1(){
 
-    let a = new Matrix(2,3);
-    let b = new Matrix(3,2);
+//     let a = new Matrix(2,3);
+//     let b = new Matrix(3,2);
     
-    a.randomize(10);
-    console.table(a.matrix);
-    b.randomize(10);
-    console.table(b.matrix);
+//     a.randomize(10);
+//     console.table(a.matrix);
+//     b.randomize(10);
+//     console.table(b.matrix);
     
-    let c = Matrix.dotProd(a,b)
-    console.table(c.matrix);
-}
+//     let c = Matrix.dotProd(a,b)
+//     console.table(c.matrix);
+// }
 
-function test2(){
-    let a = new Matrix(2,5);
-    a.randomize(10);
-    console.table(a.matrix);
-    b = a.transpose();
-    console.table(b.matrix)
-}
+// function test2(){
+//     let a = new Matrix(2,5);
+//     a.randomize(10);
+//     console.table(a.matrix);
+//     b = a.transpose();
+//     console.table(b.matrix)
+// }

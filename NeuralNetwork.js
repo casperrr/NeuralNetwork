@@ -11,7 +11,7 @@ class NeuralNetwork{
         this.outN = outN;
         
         this.weights_ih = new Matrix(this.hiddenN,this.inputN);
-        this.weights_ho = new Matrix(this.hiddenN,this.outN);
+        this.weights_ho = new Matrix(this.outN,this.hiddenN);
         this.weights_ih.randomize();
         this.weights_ho.randomize();
 
