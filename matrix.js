@@ -16,10 +16,10 @@ class Matrix{
 
     }
 
-    randomize(n){
+    randomize(){
         for (let i = 0; i < this.rows; i++){
             for(let j = 0; j < this.cols; j++){
-                 this.matrix[i][j] = Math.floor(Math.random()*n);
+                 this.matrix[i][j] = Math.random()*2 -1;
             }
         }
     }
@@ -92,6 +92,24 @@ class Matrix{
                 this.matrix[i][j] = func(val);
             }
         }
+    }
+
+    static fromArray(arr){
+        let m = new Matrix(arr.length,1);
+        for(let i = 0; i < arr.length; i++){
+            m.matrix[i][0] = arr[i];
+        }
+        return m;
+    }
+
+    toArray(){
+        let arr = [];
+        for(let i = 0; i < this.rows; i++){
+            for(let j = 0; j < this.cols; j++){
+                arr.push(this.matrix[i][j]);
+            }
+        }
+        return arr;
     }
 
     static print(mat){
